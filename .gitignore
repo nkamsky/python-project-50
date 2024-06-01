@@ -1,0 +1,6 @@
+__pycache__
+.venv/
+__pycache__/
+.idea/
+git-filter-repo
+dist/
