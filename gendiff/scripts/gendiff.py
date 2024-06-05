@@ -15,9 +15,19 @@ def get_files():
     return args.first_file, args.second_file
 
 
+def check_bool(data):
+    for key, value in data.items():
+        if value == True:
+            data[key] = 'true'
+        elif value == False:
+            data[key] = 'false'
+
+
 def generate_diff(file1, file2):
     data1 = json.load(open(file1))
     data2 = json.load(open(file2))
+    check_bool(data1)
+    check_bool(data2)
     keys1 = set(data1.keys())
     keys2 = set(data2.keys())
     all_keys = keys1.union(keys2)
@@ -33,7 +43,8 @@ def generate_diff(file1, file2):
                 result += f' + {key}: {data2[key]}\n'
             else:
                 result += f'   {key}: {data2[key]}\n'
-    return result
+    print('{\n' + result + '}')
+    # return result
 
 
 def main():
