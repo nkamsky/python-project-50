@@ -4,3 +4,4 @@ __pycache__/
 .idea/
 git-filter-repo
 dist/
+.pytest_cache
