@@ -5,3 +5,4 @@ __pycache__/
 git-filter-repo
 dist/
 .pytest_cache
+.coverage
