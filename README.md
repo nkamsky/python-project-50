@@ -8,3 +8,5 @@
 Пример:
 
 [![asciicast](https://asciinema.org/a/80DRUN8IwwmtX1i0f5dTznHq8.svg)](https://asciinema.org/a/80DRUN8IwwmtX1i0f5dTznHq8)
+
+[![asciicast](https://asciinema.org/a/sTzfJ5qUjMe3NEfhJUtqgxDHI.svg)](https://asciinema.org/a/sTzfJ5qUjMe3NEfhJUtqgxDHI)

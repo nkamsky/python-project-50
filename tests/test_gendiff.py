@@ -1,4 +1,4 @@
-from gendiff.scripts.gendiff import generate_diff
+from gendiff.modules.generate_diff import generate_diff
 
 
 def test():
@@ -14,3 +14,6 @@ def test():
     )
     assert generate_diff('tests/fixtures/file1.json',
                          'tests/fixtures/file2.json') == expected_result
+    assert generate_diff('tests/fixtures/file1.yaml',
+                         'tests/fixtures/file2.yaml') == expected_result
+    
